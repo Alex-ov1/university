@@ -1,0 +1,11 @@
+{
+  "alphabet": ["a", "b"],
+  "states": ["start", "after_a", "dead"],
+  "initial": "start",
+  "accepting": ["start"],
+  "transitions": {
+    "start": {"a": "after_a", "b": "dead"},
+    "after_a": {"a": "dead", "b": "start"},
+    "dead": {"a": "dead", "b": "dead"}
+  }
+}
